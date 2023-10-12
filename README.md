@@ -1,3 +1,5 @@
+Lighthouse report - https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftutor-place.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
