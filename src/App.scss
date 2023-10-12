@@ -1,0 +1,26 @@
+@import './_reset.scss';
+@import './../public/fonts/fonts.scss';
+
+.app {
+  font-family: "Inter";
+}
+
+html {
+  background: #1D2532;
+  color: #FFF;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1324px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

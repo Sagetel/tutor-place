@@ -1,0 +1,96 @@
+.advantages {
+  position: relative;
+  padding-top: 130px;
+  margin-bottom: 200px;
+  overflow: visible;
+
+  @media (max-width: 1060px) {
+    padding-top: 0px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 65px;
+  }
+
+  &__cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+    max-width: 650px;
+
+    @media (max-width:658px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+
+    &-elips1 {
+      top: -86px;
+      left: -155px;
+
+      @media (max-width: 1060px) {
+        height: 50px;
+        left: -30px;
+      }
+
+      @media (max-width:658px) {
+        height: 21px;
+        top: -36px;
+        left: -10px;
+      }
+    }
+
+    &-elips2 {
+      top: -49px;
+      right: 153px;
+
+      @media (max-width: 1060px) {
+        top: -159px;
+        right: 60px;
+      }
+
+      @media (max-width:658px) {
+        height: 87px;
+        width: auto;
+        right: -60px;
+      }
+    }
+
+    &-elips3 {
+      bottom: -100px;
+      right: 155px;
+
+      @media (max-width:658px) {
+        width: 63px;
+        height: auto;
+        bottom: -100px;
+        right: -10px;
+      }
+    }
+
+    &-elipsbg {
+      height: 600px;
+      width: auto;
+      top: -190px;
+      right: -75px;
+      clip: rect(0, auto, auto, 0);
+    }
+
+    &-elipsbtbg {
+      bottom: -403px;
+      left: -131px;
+
+      @media (max-width:658px) {
+        display: none;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,49 @@
+.decore {
+  position: absolute;
+  z-index: -1;
+  right: -76px;
+  top: -139px;
+
+  @media (max-width: 1280px) {
+    right: -68px;
+    top: -35px;
+  }
+
+  @media (max-width: 1060px) {
+    position: relative;
+    display: contents;
+    margin-top: 16px;
+    margin-bottom: 11px;
+  }
+
+  &__circle {
+    position: absolute;
+    top: 67px;
+    left: -89px;
+  }
+
+  &__circle {
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__person {
+    @media (max-width: 1280px) {
+      max-width: 500px;
+      height: auto;
+    }
+
+    @media (max-width: 550px) {
+      max-width: 400px;
+      height: auto;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 321px;
+      height: auto;
+    }
+
+    align-self: center;
+  }
+}

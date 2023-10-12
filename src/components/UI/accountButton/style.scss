@@ -1,0 +1,24 @@
+.button--account {
+  border-radius: 15px;
+  background: none;
+  border: 1px solid #FFF;
+  padding: 16px 22px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: border .2s ease-in-out, color .2s ease-in-out;
+
+  &:hover {
+    border: 1px solid #C3F33B;
+    color: #C3F33B;
+  }
+
+  &:active {
+    background: rgba(224, 255, 172, 0.05);
+    backdrop-filter: blur(7.5px);
+  }
+}

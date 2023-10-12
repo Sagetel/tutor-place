@@ -1,0 +1,81 @@
+.card {
+  position: relative;
+  min-width: 300px;
+  min-height: 310px;
+  border-radius: 20px;
+  background: #313C4E;
+  backdrop-filter: blur(30.5px);
+  z-index: 2; // не работает
+
+  @media (max-width: 710px) {
+    max-width: 290px;
+    min-height: 310px;
+  }
+
+  @media (max-width:658px) {
+    max-width: 100%;
+    align-self: center;
+  }
+
+  @media (max-width:400px) {
+    min-height: 273px;
+  }
+
+  @media (max-width:340px) {
+    min-width: 260px;
+    align-self: center;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 86%;
+    height: 200px;
+    border-radius: 20px;
+    background: #313c4e80;
+    backdrop-filter: blur(27.5px);
+    z-index: -1;
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 19px;
+
+    @media (max-width: 400px) {
+      padding: 48px 23px;
+    }
+  }
+
+  &__image {
+    height: 117px;
+    width: 117px;
+    margin-bottom: 23px;
+
+    @media (max-width: 400px) {
+      height: 83px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.7px;
+
+    @media (max-width: 380px) {
+      font-size: 16px;
+    }
+  }
+}
